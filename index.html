@@ -21,14 +21,14 @@
 <link rel="icon" href="./assets\img\ico\favicon.png" type="image/gif" sizes="16x16">
 <script>
 /*Counter script*/
-function fakecounter(){
+function counter(){
 
 //decrease/increase counter value (depending on perceived popularity of your site!)
 var decrease_increase=1
 
 var counterdate=new Date()
 var currenthits=counterdate.getTime().toString()
-currenthits=parseInt(currenthits.substring(2,currenthits.length-4))+decrease_increase
+currenthits=parseInt(currenthits.substring(2,currenthits.length-400000))+decrease_increase
 
 document.write("You are our <b>"+currenthits+"</b> customer")
 }
@@ -246,7 +246,7 @@ document.write("You are our <b>"+currenthits+"</b> customer")
         </div>
         <div class="footer-copyright">
             <p>
-                © 2018 Glib Authority <br>  <script> fakecounter(); </script>
+                © 2018 Glib Authority <br>  <script> counter(); </script>
             </p>
         </div>
     </footer>
