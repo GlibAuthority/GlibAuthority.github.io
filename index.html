@@ -19,8 +19,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 <link rel="icon" href="./assets\img\ico\favicon.png" type="image/gif" sizes="16x16">
+<script>
+/*Counter script*/
+function fakecounter(){
 
-    
+//decrease/increase counter value (depending on perceived popularity of your site!)
+var decrease_increase=50000
+
+var counterdate=new Date()
+var currenthits=counterdate.getTime().toString()
+currenthits=parseInt(currenthits.substring(2,currenthits.length-4))+decrease_increase
+
+document.write("You are visitor our #<b>"+currenthits+"</b> customer")
+}
+fakecounter()
+</script>
     
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
