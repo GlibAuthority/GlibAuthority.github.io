@@ -24,13 +24,13 @@
 function fakecounter(){
 
 //decrease/increase counter value (depending on perceived popularity of your site!)
-var decrease_increase=50000
+var decrease_increase=3
 
 var counterdate=new Date()
 var currenthits=counterdate.getTime().toString()
 currenthits=parseInt(currenthits.substring(2,currenthits.length-4))+decrease_increase
 
-document.write("You are visitor our #<b>"+currenthits+"</b> customer")
+document.write("You are our <b>"+currenthits+"</b> customer")
 }
 </script>
     
@@ -44,7 +44,7 @@ document.write("You are visitor our #<b>"+currenthits+"</b> customer")
     </script>
     
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112390178-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/jsid=UA-112390178-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
